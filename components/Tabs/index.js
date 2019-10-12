@@ -12,7 +12,7 @@ const topicsSelector = document.querySelector('.topics');
 
 axios.get(`https://lambda-times-backend.herokuapp.com/topics`)
     .then(response => {
-        console.log(response);
+        //console.log(response);
         for(let a = 0; a < response.data.topics.length; a++){
             topicsSelector.appendChild(tab(response.data.topics[a]))
         }
